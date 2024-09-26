@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    position: absolute;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: #333;
+}
+
+#joke-container {
+    margin: 2rem 0;
+    min-height: 100px;
+}
+
+#setup {
+    font-weight: bold;
+}
+
+#new-joke-btn {
+    background-color: #10a31d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #new-joke-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+#vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#setup {
+    color: white;
+    font-size: 50px;
+}
+
+#delivery { 
+    font-size: 45px;
+    color: white;
+}
+
+#category {
+    color: #10a31d;
+}
+
+#laugh {
+    font-size: 60px;
+}
